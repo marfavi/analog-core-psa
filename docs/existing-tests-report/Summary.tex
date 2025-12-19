@@ -1,0 +1,132 @@
+\documentclass[a4paper,landscape,10pt]{article}
+\usepackage[paper=a4paper,landscape,left=20mm,right=20mm,top=20mm,bottom=20mm]{geometry}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+\usepackage[pdftex]{color}
+\usepackage{colortbl}
+\definecolor{green}{rgb}{0.04,0.68,0.04}
+\definecolor{orange}{rgb}{0.97,0.65,0.12}
+\definecolor{red}{rgb}{0.75,0.04,0.04}
+\definecolor{gray}{rgb}{0.86,0.86,0.86}
+
+\usepackage[pdftex,
+            colorlinks=true, linkcolor=red, urlcolor=green, citecolor=red,%
+            raiselinks=true,%
+            bookmarks=true,%
+            bookmarksopenlevel=1,%
+            bookmarksopen=true,%
+            bookmarksnumbered=true,%
+            hyperindex=true,% 
+            plainpages=false,% correct hyperlinks
+            pdfpagelabels=true%,% view TeX pagenumber in PDF reader
+            %pdfborder={0 0 0.5}
+            ]{hyperref}
+
+\hypersetup{pdftitle={Coverage Report},
+            pdfauthor={ReportGenerator - 5.5.1.0}
+           }
+
+\pagestyle{fancy}
+\fancyhead[LE,LO]{\leftmark}
+\fancyhead[R]{\thepage}
+\fancyfoot[C]{ReportGenerator - 5.5.1.0}
+
+\begin{document}
+
+\setcounter{secnumdepth}{-1}
+\section{Summary}
+\begin{longtable}[l]{ll}
+Generated on: & 12/18/2025 - 7:38:44 PM\\
+Parser: & Cobertura\\
+Assemblies: & 2\\
+Classes: & 72\\
+Files: & 72\\
+\textbf{Line coverage:} & 42.3\% (1561 of 3684)\\
+Covered lines: & 1561\\
+Uncovered lines: & 2123\\
+Coverable lines: & 3684\\
+Total lines: & 7108\\
+\textbf{Branch coverage:} & 40.8\% (208 of 509)\\
+Covered branches: & 208\\
+Total branches: & 509\\
+\textbf{Method coverage:} & [Feature is only available for sponsors](https://reportgenerator.io/pro)\\
+\end{longtable}
+\section{Coverage}
+\begin{longtable}[l]{|l|r|r|r|r|r|r|}
+\textbf{Name} & \textbf{Covered} & \textbf{Uncovered} & \textbf{Coverable} & \textbf{Total} & \textbf{Line coverage} & \textbf{Branch coverage}\\
+\textbf{CoffeeCard.Library} & \textbf{1152} & \textbf{1248} & \textbf{2400} & \textbf{3752} & \textbf{48\%} & \textbf{42.4\%}\\
+CoffeeCard.Library.Services.AccountService & 131 & 152 & 283 & 388 & 46.2\% & 39.2\%\\
+CoffeeCard.Library.Services.EmailService & 14 & 101 & 115 & 186 & 12.1\% & \\
+CoffeeCard.Library.Services.HashService & 6 & 7 & 13 & 26 & 46.1\% & \\
+CoffeeCard.Library.Services.LoginLimiter & 39 & 1 & 40 & 89 & 97.5\% & 91.6\%\\
+CoffeeCard.Library.Services.MailgunEmailSender & 0 & 25 & 25 & 39 & 0\% & 0\%\\
+CoffeeCard.Library.Services.MapperService & 0 & 64 & 64 & 97 & 0\% & 0\%\\
+CoffeeCard.Library.Services.ProductService & 23 & 0 & 23 & 46 & 100\% & \\
+CoffeeCard.Library.Services.ProgrammeService & 0 & 10 & 10 & 27 & 0\% & \\
+CoffeeCard.Library.Services.PurchaseService & 0 & 88 & 88 & 133 & 0\% & 0\%\\
+CoffeeCard.Library.Services.SmtpEmailSender & 2 & 16 & 18 & 34 & 11.1\% & \\
+CoffeeCard.Library.Services.TicketService & 0 & 191 & 191 & 271 & 0\% & 0\%\\
+CoffeeCard.Library.Services.TokenService & 80 & 6 & 86 & 153 & 93\% & 87.5\%\\
+CoffeeCard.Library.Services.v2.AccountService & 202 & 66 & 268 & 392 & 75.3\% & 75\%\\
+CoffeeCard.Library.Services.v2.AdminStatisticsService & 0 & 26 & 26 & 48 & 0\% & \\
+CoffeeCard.Library.Services.v2.EmailService & 56 & 2 & 58 & 98 & 96.5\% & 25\%\\
+CoffeeCard.Library.Services.v2.LeaderboardService & 52 & 0 & 52 & 91 & 100\% & 83.3\%\\
+CoffeeCard.Library.Services.v2.MenuItemService & 0 & 69 & 69 & 116 & 0\% & 0\%\\
+CoffeeCard.Library.Services.v2.ProductService & 83 & 17 & 100 & 151 & 83\% & 75\%\\
+CoffeeCard.Library.Services.v2.PurchaseService & 263 & 103 & 366 & 523 & 71.8\% & 60.7\%\\
+CoffeeCard.Library.Services.v2.StatisticService & 0 & 86 & 86 & 120 & 0\% & 0\%\\
+CoffeeCard.Library.Services.v2.TicketService & 34 & 104 & 138 & 197 & 24.6\% & 16.6\%\\
+CoffeeCard.Library.Services.v2.TokenService & 34 & 0 & 34 & 59 & 100\% & 100\%\\
+CoffeeCard.Library.Services.v2.VoucherService & 55 & 0 & 55 & 98 & 100\% & 100\%\\
+CoffeeCard.Library.Services.v2.WebhookService & 0 & 84 & 84 & 136 & 0\% & 0\%\\
+CoffeeCard.Library.Utils.ClaimsUtilities & 16 & 20 & 36 & 63 & 44.4\% & 33.3\%\\
+CoffeeCard.Library.Utils.DateTimeConverter & 12 & 0 & 12 & 36 & 100\% & \\
+CoffeeCard.Library.Utils.DateTimeProvider & 3 & 0 & 3 & 12 & 100\% & \\
+CoffeeCard.Library.Utils.LeaderboardPresetExtensions & 8 & 1 & 9 & 19 & 88.8\% & 75\%\\
+CoffeeCard.Library.Utils.ProductExtensions & 27 & 0 & 27 & 50 & 100\% & 100\%\\
+CoffeeCard.Library.Utils.SemesterUtils & 12 & 0 & 12 & 34 & 100\% & 100\%\\
+CoffeeCard.Library.Utils.StatisticUtils & 0 & 9 & 9 & 20 & 0\% & \\
+\textbf{CoffeeCard.WebApi} & \textbf{409} & \textbf{875} & \textbf{1284} & \textbf{3356} & \textbf{31.8\%} & \textbf{36.8\%}\\
+AspNetCoreGeneratedDocument.Pages\_Recover & 0 & 2 & 2 & 23 & 0\% & \\
+AspNetCoreGeneratedDocument.Pages\_Result & 0 & 7 & 7 & 19 & 0\% & 0\%\\
+AspNetCoreGeneratedDocument.Pages\_VerifyDelete & 0 & 2 & 2 & 7 & 0\% & \\
+AspNetCoreGeneratedDocument.Pages\_VerifyEmail & 0 & 2 & 2 & 7 & 0\% & \\
+CoffeeCard.WebApi.Controllers.AccountController & 13 & 39 & 52 & 148 & 25\% & 50\%\\
+CoffeeCard.WebApi.Controllers.AppConfigController & 0 & 4 & 4 & 38 & 0\% & \\
+CoffeeCard.WebApi.Controllers.CoffeeCardsController & 0 & 7 & 7 & 44 & 0\% & \\
+CoffeeCard.WebApi.Controllers.LeaderboardController & 0 & 4 & 4 & 38 & 0\% & \\
+CoffeeCard.WebApi.Controllers.MobilePayController & 0 & 7 & 7 & 52 & 0\% & \\
+CoffeeCard.WebApi.Controllers.PingController & 0 & 2 & 2 & 28 & 0\% & \\
+CoffeeCard.WebApi.Controllers.ProductsController & 0 & 26 & 26 & 85 & 0\% & \\
+CoffeeCard.WebApi.Controllers.ProgrammesController & 0 & 9 & 9 & 45 & 0\% & 0\%\\
+CoffeeCard.WebApi.Controllers.PurchasesController & 0 & 15 & 15 & 82 & 0\% & \\
+CoffeeCard.WebApi.Controllers.TicketsController & 0 & 24 & 24 & 100 & 0\% & 0\%\\
+CoffeeCard.WebApi.Controllers.v2.AccountController & 43 & 44 & 87 & 285 & 49.4\% & 50\%\\
+CoffeeCard.WebApi.Controllers.v2.AdminStatisticsController & 0 & 8 & 8 & 52 & 0\% & \\
+CoffeeCard.WebApi.Controllers.v2.AppConfigController & 0 & 8 & 8 & 39 & 0\% & \\
+CoffeeCard.WebApi.Controllers.v2.HealthController & 0 & 33 & 33 & 86 & 0\% & 0\%\\
+CoffeeCard.WebApi.Controllers.v2.LeaderboardController & 0 & 15 & 15 & 72 & 0\% & \\
+CoffeeCard.WebApi.Controllers.v2.MenuItemsController & 0 & 16 & 16 & 89 & 0\% & \\
+CoffeeCard.WebApi.Controllers.v2.MobilePayController & 0 & 65 & 65 & 137 & 0\% & 0\%\\
+CoffeeCard.WebApi.Controllers.v2.ProductsController & 0 & 26 & 26 & 124 & 0\% & \\
+CoffeeCard.WebApi.Controllers.v2.PurchasesController & 0 & 34 & 34 & 144 & 0\% & \\
+CoffeeCard.WebApi.Controllers.v2.TicketsController & 0 & 15 & 15 & 78 & 0\% & \\
+CoffeeCard.WebApi.Controllers.v2.VouchersController & 0 & 17 & 17 & 90 & 0\% & \\
+CoffeeCard.WebApi.Controllers.v2.WebhooksController & 0 & 8 & 8 & 50 & 0\% & \\
+CoffeeCard.WebApi.Helpers.ApiExceptionFilter & 9 & 13 & 22 & 58 & 40.9\% & 33.3\%\\
+CoffeeCard.WebApi.Helpers.AuthorizeRolesAttribute & 4 & 14 & 18 & 44 & 22.2\% & 0\%\\
+CoffeeCard.WebApi.Helpers.ConfigurationServiceCollectionExtension & 24 & 0 & 24 & 48 & 100\% & \\
+CoffeeCard.WebApi.Helpers.PageUtils & 0 & 28 & 28 & 67 & 0\% & 0\%\\
+CoffeeCard.WebApi.Helpers.ReadableBodyFilter & 4 & 0 & 4 & 24 & 100\% & \\
+CoffeeCard.WebApi.Helpers.RequestLoggerMiddleware & 0 & 48 & 48 & 89 & 0\% & 0\%\\
+CoffeeCard.WebApi.Helpers.Swagger.RemoveApiVersionProcessor & 0 & 15 & 15 & 40 & 0\% & 0\%\\
+CoffeeCard.WebApi.Logging.Enricher & 0 & 34 & 34 & 102 & 0\% & 0\%\\
+CoffeeCard.WebApi.Logging.LoggerConfigurationExtensions & 0 & 5 & 5 & 24 & 0\% & 0\%\\
+CoffeeCard.WebApi.Pages.Recover & 0 & 48 & 48 & 101 & 0\% & 0\%\\
+CoffeeCard.WebApi.Pages.Result & 0 & 3 & 3 & 20 & 0\% & \\
+CoffeeCard.WebApi.Pages.VerifyDelete & 0 & 17 & 17 & 50 & 0\% & \\
+CoffeeCard.WebApi.Pages.VerifyEmail & 0 & 26 & 26 & 58 & 0\% & 0\%\\
+CoffeeCard.WebApi.Program & 21 & 81 & 102 & 155 & 20.5\% & 25\%\\
+CoffeeCard.WebApi.Startup & 291 & 104 & 395 & 514 & 73.6\% & 66.1\%\\
+\end{longtable}
+\end{document}
