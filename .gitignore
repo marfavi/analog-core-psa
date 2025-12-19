@@ -1,6 +1,5 @@
 .DS_Store
 
-SeedData.bacpac
 bin
 obj
 coverage.cobertura.xml
