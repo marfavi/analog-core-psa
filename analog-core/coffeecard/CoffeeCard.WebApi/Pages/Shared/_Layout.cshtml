@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Cafe Analog - @ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css"/>
+</head>
+
+<body>
+<div class="box">
+    <div class="row header">
+        <img id="logo" src="~/images/AnalogLogo.svg" alt="Analog logo"/>
+    </div>
+    <div class="row content">
+        <div class="wrapper">
+            @RenderBody()
+        </div>
+    </div>
+    <div class="row footer">
+        <p>
+            <strong>Cafe Analog</strong><br/>
+            Rued Langgaards Vej 7, 2300 Copenhagen S / CVR: 34657343<br/>
+            <a href="mailto:support@analogio.dk">support@analogio.dk</a> / <a href="https://www.cafeanalog.dk">www.cafeanalog.dk</a>
+        </p>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js" runat="server"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/jquery.validate.min.js"></script>
+<script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

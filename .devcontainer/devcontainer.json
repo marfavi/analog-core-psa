@@ -1,0 +1,24 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
+{
+	"name": "Python 3",
+	"dockerComposeFile": "docker-compose.fuzzing.yml",
+	"service": "webapi",
+	"workspaceFolder": "/workspace",
+	"features": {
+		"ghcr.io/devcontainers/features/dotnet:2": {
+			"version": "8.0"
+		}
+	},
+	"onCreateCommand": "pip install fuzzingbook && dotnet tool install --global dotnet-coverage && dotnet tool install -g dotnet-reportgenerator-globaltool",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-toolsai.jupyter@2025.7.0",
+				"ms-python.python",
+				"jetbrains.resharper-code",
+				"cweijan.vscode-myssql-client2"
+			]
+		}
+	}
+}

@@ -1,0 +1,121 @@
+{
+  "sqlServer": {
+    "skuCapacity": 10,
+    "skuName": "Standard",
+    "skuTier": "Standard",
+    "alerts": true
+  },
+  "webapp": {
+    "dockerRegistry": "ghcr.io/analogio/coffeecard-api:production",
+    "alerts": {
+      "resource": true,
+      "healthcheck": true,
+      "ping": true
+    },
+    "appSettings": [
+      {
+        "name": "EnvironmentSettings__EnvironmentType",
+        "value": "Production"
+      },
+      {
+        "name": "EnvironmentSettings__DeploymentUrl",
+        "value": "https://core.prd.analogio.dk/"
+      },
+      {
+        "name": "EnvironmentSettings__ShiftyUrl",
+        "value": "https://shifty.prd.analogio.dk/"
+      },
+      {
+        "name": "MailgunSettings__Domain",
+        "value": "mg.cafeanalog.dk"
+      },
+      {
+        "name": "MailgunSettings__EmailBaseUrl",
+        "value": "https://core.prd.analogio.dk"
+      },
+      {
+        "name": "MobilePaySettings__AnalogAppRedirectUri",
+        "value": "analogcoffeecard://mobilepay_purchase"
+      },
+      {
+        "name": "MobilePaySettings__ApiUrl",
+        "value": "https://api.vipps.no"
+      },
+      {
+        "name": "MobilePaySettings__WebhookUrl",
+        "value": "https://core.prd.analogio.dk/api/v2/mobilepay/webhook"
+      },
+      {
+        "name": "EnvironmentSettings__MinAppVersion",
+        "value": "2.0.0"
+      },
+      {
+        "name": "MailgunSettings__MailgunApiUrl",
+        "value": "https://api.mailgun.net/v3"
+      },
+      {
+        "name": "LoginLimiterSettings__IsEnabled",
+        "value": true
+      },
+      {
+        "name": "LoginLimiterSettings__MaximumLoginAttemptsWithinTimeOut",
+        "value": "5"
+      },
+      {
+        "name": "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES",
+        "value": "Microsoft.AspNetCore.ApplicationInsights.HostingStartup"
+      },
+      {
+        "name": "OtlpSettings__Endpoint",
+        "value": "https://otlp-gateway-prod-eu-north-0.grafana.net/otlp"
+      },
+      {
+        "name": "OtlpSettings__Protocol",
+        "value": "http"
+      },
+      {
+        "name": "FeatureManagement__MobilePayManageWebhookRegistration",
+        "value": true
+      }
+    ],
+    "keyVaultReferences": [
+      {
+        "name": "IdentitySettings__TokenKey",
+        "secretName": "IdentitySettings-TokenKey"
+      },
+      {
+        "name": "IdentitySettings__AdminToken",
+        "secretName": "IdentitySettings-AdminToken"
+      },
+      {
+        "name": "IdentitySettings__ApiKey",
+        "secretName": "IdentitySettings-ApiKey"
+      },
+      {
+        "name": "MailgunSettings__ApiKey",
+        "secretName": "MailgunSettings-ApiKey"
+      },
+      {
+        "name": "OtlpSettings__Token",
+        "secretName": "OtlpSettings-Token"
+      },
+      {
+        "name": "MobilePaySettings__ClientId",
+        "secretName": "MobilePaySettings-ClientId"
+      },
+      {
+        "name": "MobilePaySettings__ClientSecret",
+        "secretName": "MobilePaySettings-ClientSecret"
+      },
+      {
+        "name": "MobilePaySettings__MerchantSerialNumber",
+        "secretName": "MobilePaySettings-MerchantSerialNumber"
+      },
+      {
+        "name": "MobilePaySettings__OcpApimSubscriptionKey",
+        "secretName": "MobilePaySettings-OcpApimSubscriptionKey"
+      }
+    ]
+  }
+}
+

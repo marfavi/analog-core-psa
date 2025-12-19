@@ -1,0 +1,25 @@
+name: Build
+
+on:
+  workflow_dispatch:
+
+  workflow_call:
+    inputs:
+      push_image:
+        description: "Push docker image to registry"
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  core-build:
+    name: Build codebase
+    uses: ./.github/workflows/core-build.yml
+    with:
+      push_image: ${{ inputs.push_image }}
+    secrets: inherit
+
+  infra-build:
+    name: Build infrastructure
+    uses: ./.github/workflows/infra-build.yml
+    secrets: inherit

@@ -1,0 +1,101 @@
+html,
+body {
+    background: #ece9e9;
+    height: 100%;
+}
+
+.box {
+    display: flex;
+    flex-flow: column;
+    font-family: 'Nunito Sans', 'Helvetica Neue', helvetica, arial, sans-serif;
+    font-size: 2vh;
+    height: 100%;
+}
+
+* { margin: 0;
+    padding: 0}  
+
+.box .row { /* border: 1px dotted grey; */ }
+
+.box .row.header {
+    align-content: center;
+    flex: 0 1 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+
+#logo {width: 100%; max-width: 600px;}
+
+.box .row.content {
+    align-content: center;
+    flex: 1 1 auto;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.box .row.footer {
+    align-content: center;
+    background: #433025;
+    color: #ece9e9;
+    flex: 0 1 40px;
+    font-size: 0.8em;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    text-align: center;
+}
+
+.row.footer a { color: #ece9e9; text-decoration: none; }
+.row.footer a:hover { text-decoration: underline}
+
+div .wrapper {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px grey;
+    color: #38251a;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+.wrapper h1 {
+    font-size: 1.4em;
+    font-weight: 700;
+    line-height: 1.5em;
+    Margin: 0;
+    padding: 10px !important;
+    text-align: center;
+}
+
+.wrapper p {
+    color: #38251a;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1;
+    Margin: 0 15px 0 15px;
+    padding-bottom: 20px;
+    padding-top: 8px;
+}
+
+div#updatePinCode .updatePinContainer { padding: 2% 4% 2%; }
+
+div#updatePinCode input[type="password"] {
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 2%;
+    width: 92%;
+}
+
+div#updatePinCode select { width: 100%; }
+
+div#updatePinCode input[type="submit"] {
+    -webkit-transition: background .3s;
+    background: #433025;
+    border: 0;
+    border-radius: 10px;
+    color: #ece9e9;
+    cursor: pointer;
+    padding: 2%;
+    transition: background .3s;
+    width: 100%;
+}
+
+div#updatePinCode input[type="submit"]:hover { background: #342218; }

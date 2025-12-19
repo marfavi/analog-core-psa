@@ -1,0 +1,61 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <LangVersion>default</LangVersion>
+    <ProjectGuid>81E81CE9-7DDA-4A9B-860B-6A473BC4F06F</ProjectGuid>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="coverlet.msbuild" Version="3.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.6.3" />
+    <PackageReference Include="Moq" Version="4.20.72" />
+    <PackageReference Include="NetEscapades.Configuration.Validation" Version="2.0.0" />
+    <PackageReference Include="xunit" Version="2.7.0" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.7">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.2.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference
+      Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore"
+      Version="8.0.0"
+    />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.8" />
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="14.0.7" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CoffeeCard.WebApi\CoffeeCard.WebApi.csproj" />
+    <ProjectReference Include="..\CoffeeCard.Tests.Common\CoffeeCard.Tests.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="..\CoffeeCard.WebApi\appsettings.json">
+      <Link>appsettings.json</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <OpenApiReference Include="../CoffeeCard.WebApi/obj/CoffeeCard.WebApi.json">
+      <ClassName>CoffeeCardClient</ClassName>
+      <Namespace>CoffeeCard.Tests.ApiClient.Generated</Namespace>
+      <Options>/UseBaseUrl:false /OperationGenerationMode:SingleClientFromOperationId</Options>
+    </OpenApiReference>
+    <OpenApiReference Include="../CoffeeCard.WebApi/obj/CoffeeCard.WebApi_v2.json">
+      <ClassName>CoffeeCardClientV2</ClassName>
+      <Namespace>CoffeeCard.Tests.ApiClient.v2.Generated</Namespace>
+      <Options>/AdditionalNamespaceUsages:CoffeeCard.Tests.ApiClient.Generated /UseBaseUrl:false /OperationGenerationMode:SingleClientFromOperationId</Options>
+    </OpenApiReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,11 @@
+.DS_Store
+
+SeedData.bacpac
+bin
+obj
+coverage.cobertura.xml
+merged-coverage-debug.xml
+.vscode
+
+coverage-report
+analog-core/coffeecard/CoffeeCard.WebApi/output.cobertura.xml
